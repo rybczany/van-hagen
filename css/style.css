@@ -49,10 +49,22 @@ p {
 	line-height: 35px;
 	letter-spacing: .5px;
 }
-span{
+h3 span{
 	font-weight: 300;
 }
+.list li:nth-child(3) h2,
+.list li:nth-child(4) h2,
+.list li:nth-child(6) h2,
+.list li:nth-child(7) h2,
+.list--small li:nth-child(1) h2,
+.list--small li:nth-child(3) h2,
+.list--small li:nth-child(4) h2,
+.location h2{
+	text-transform: capitalize;
+}
+
 /*----------------STYLE*/
+
 section{
 	background-image: url("../image/map.png");
 	background-size: 105% 100%;
@@ -82,15 +94,6 @@ section{
 .content{
 	margin: 220px 0 180px;
 }
-.list li:nth-child(3) h2,
-.list li:nth-child(4) h2,
-.list li:nth-child(6) h2,
-.list li:nth-child(7) h2,
-.list--small li:nth-child(1) h2,
-.list--small li:nth-child(3) h2,
-.list--small li:nth-child(4) h2{
-	text-transform: capitalize;
-}
 .box-text{
 	border: 1px solid #fff;
 	margin: 20px 0 90px;
@@ -100,4 +103,32 @@ section{
 }
 .box-text p{
 	margin: 0 50px 55px;
+}
+.location{
+	position: absolute;
+}
+.location--paris{
+	top: 301px;
+	left: 511.5px;
+}
+.location h2{
+	margin: 0;
+}
+.line{
+    display: inline-block;
+    position: relative;
+    width: 210px;
+    height: 2px;
+    background-color: #fff;
+}
+.line::after{
+	content: '';
+	display: inline-block;
+	position: absolute;
+	top: -3px;
+	left: 225px;
+	width: 8px;
+	height: 8px;
+	background-color: #fff;
+	border-radius: 100%;
 }
