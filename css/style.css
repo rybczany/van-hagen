@@ -1,6 +1,103 @@
-body {
+
+/*--------------LAYOUT*/
+
+body{
 	margin: 0;
 	padding: 0;
 	border: 0;
 	background-color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+}
+.container{
+	max-width: 1450px;
+	width: 100%;
+	margin: 0 auto;
+}
+/*-------------GLOBAL*/
+
+ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+a:-webkit-any-link{
+	text-decoration: none;
+}
+
+/*------------TYPOGRAPHY*/
+h2, h3{
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #fff;
+}
+h1{
+	font-size: 118px;
+	font-weight: 300;
+	letter-spacing: -6px;
+}
+h2{
+	font-size: 20px;
+	font-weight: 400;
+}
+h3{
+	font-size: 18px;
+}
+p {
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 35px;
+	letter-spacing: .5px;
+}
+span{
+	font-weight: 300;
+}
+/*----------------STYLE*/
+section{
+	background-image: url("../image/map.png");
+	background-size: 105% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.logo{
+	display: inline-block;
+	position: absolute;
+	top: 47px;
+	left: 10px;
+}
+.nav-bar{
+	margin-top: 40px;
+	display: inline-block;
+	letter-spacing: 2px;
+}
+.nav-bar li{
+	display: inline-block;
+}
+.nav-bar li:first-child{
+	padding-right: 55px;
+}
+.nav-bar li:nth-child(3){
+	padding-left: 95px;
+}
+.content{
+	margin: 220px 0 180px;
+}
+.list li:nth-child(3) h2,
+.list li:nth-child(4) h2,
+.list li:nth-child(6) h2,
+.list li:nth-child(7) h2,
+.list--small li:nth-child(1) h2,
+.list--small li:nth-child(3) h2,
+.list--small li:nth-child(4) h2{
+	text-transform: capitalize;
+}
+.box-text{
+	border: 1px solid #fff;
+	margin: 20px 0 90px;
+}
+.box-text h2{
+	margin: 50px 50px 40px;
+}
+.box-text p{
+	margin: 0 50px 55px;
 }
