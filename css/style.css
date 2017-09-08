@@ -8,6 +8,8 @@ body{
 	background-color: #fff;
 	font-family: 'Montserrat', sans-serif;
 	color: #fff;
+	font-size: 12px;
+	font-weight: 600;
 }
 .container{
 	max-width: 1450px;
@@ -21,25 +23,17 @@ ul{
 	padding: 0;
 	list-style-type: none;
 }
-a:-webkit-any-link{
-	text-decoration: none;
-}
+
 
 /*------------TYPOGRAPHY*/
-h2, h3{
-	text-transform: uppercase;
-	font-weight: 600;
-	color: #fff;
-}
-.box-text h2{
-	text-transform: none;
-}
+
 h1{
 	font-size: 118px;
 	font-weight: 300;
 	letter-spacing: -6px;
 }
-h2{
+h2, 
+.list li{
 	font-size: 20px;
 	font-weight: 400;
 }
@@ -55,16 +49,17 @@ p {
 h3 span{
 	font-weight: 300;
 }
-.list li:nth-child(3) h2,
-.list li:nth-child(4) h2,
-.list li:nth-child(6) h2,
-.list li:nth-child(7) h2,
-.list--small li:nth-child(1) h2,
-.list--small li:nth-child(3) h2,
-.list--small li:nth-child(4) h2,
-.location h2{
-	text-transform: capitalize;
+a:-webkit-any-link{
+	text-decoration: none;
 }
+a{
+	color: #fff;
+	transition: color .2s ease;
+}
+a:hover{
+	color: #414141;
+}
+
 
 /*----------------STYLE*/
 
@@ -85,6 +80,9 @@ section{
 	display: inline-block;
 	letter-spacing: 2px;
 }
+.nav-bar ul{
+	margin-top: 20px;
+}
 .nav-bar li{
 	display: inline-block;
 }
@@ -96,6 +94,9 @@ section{
 }
 .content{
 	margin: 220px 0 180px;
+}
+.list li{
+	margin: 15px 0;
 }
 .collapse{
 	display: block;
@@ -117,8 +118,11 @@ section{
 	top: 301px;
 	left: 511.5px;
 }
-.location h2{
+.location span{
+	display: block;
 	margin: 0;
+	font-size: 20px;
+	font-weight: 400;
 }
 .line{
     display: inline-block;
@@ -149,6 +153,5 @@ section{
   .box-text{margin: 90px 0 100px;}
   .box-text h2{font-size: 29px;}
   .box-text p{font-size: 20px;}
-  .list h2,
-  .list--small h2{font-size: 26px;}
+  .list li{font-size: 26px;}
 }
