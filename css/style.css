@@ -5,7 +5,7 @@ body{
 	margin: 0;
 	padding: 0;
 	border: 0;
-	background-color: #fff;
+	background-color: #9d0a0f;
 	font-family: 'Montserrat', sans-serif;
 	color: #fff;
 	font-size: 12px;
@@ -16,12 +16,21 @@ body{
 	width: 100%;
 	margin: 0 auto;
 }
+.container--map{
+	max-width: 1540px;
+}
 /*-------------GLOBAL*/
 
 ul{
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
 }
 
 
@@ -43,7 +52,7 @@ h3{
 p {
 	font-size: 16px;
 	font-weight: 300;
-	line-height: 35px;
+	line-height: 32px;
 	letter-spacing: .5px;
 }
 h3 span{
@@ -87,14 +96,10 @@ a:hover{
 .nav-bar li:nth-child(3){
 	padding-left: 95px;
 }
-section.map{
-	display: none;
-	background-color: transparent;
-	background-image: url("../image/map.png");
-	background-size: 105% 100%;
-	background-position: center;
-	background-repeat: no-repeat;
-	overflow: visible;
+.map-content{
+	width: 101%;
+	height: auto;
+	transform: translateY(8%);
 }
 .location{
 	position: absolute;
@@ -127,21 +132,29 @@ section.map{
 	background-color: #fff;
 	border-radius: 100%;
 }
-.content{
-	margin: 220px 0 180px;
+.text-content{
+	position: absolute;
+	bottom: -200px;
+	left: 65px;
+}
+.text-content__header{
+	margin: 160px 0 130px;
+}
+.list ul{
+	margin
 }
 .list li{
-	margin: 15px 0;
+	margin: 11px 0;
 }
 .collapse{
 	display: block;
 }
 .box-text{
 	border: 1px solid #fff;
-	margin: 20px 0 90px;
+	margin: 10px 0 90px;
 }
 .box-text h2{
-	margin: 50px 50px 40px;
+	margin: 50px 50px 30px;
 }
 .box-text p{
 	margin: 0 50px 55px;
@@ -150,8 +163,9 @@ section.map{
   .container{width: 520px;}
   .logo,
   .nav-bar{display: none;}
-  .content{margin: 65px 0 90px;}
-  .content h1{font-size: 80px; letter-spacing: -2px;}
+  .text-content{top: 0; left: 50px;}
+  .text-content__header{margin: 65px 0 90px;}
+  .text-content__header h1{font-size: 80px; letter-spacing: -2px;}
   .collapse,
   .location{display: none;}
   .box-text{margin: 90px 0 100px;}
