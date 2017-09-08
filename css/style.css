@@ -66,7 +66,7 @@ a{
 	transition: color .2s ease;
 }
 a:hover{
-	color: #414141;
+	color: #700507;
 }
 
 
@@ -103,10 +103,11 @@ a:hover{
 }
 .location{
 	position: absolute;
+	display: none;
 }
 .location--paris{
-	top: 301px;
-	left: 511.5px;
+	top: 300px;
+	left: 505px;
 }
 .location span{
 	display: block;
@@ -114,6 +115,7 @@ a:hover{
 	font-size: 20px;
 	font-weight: 400;
 }
+
 .line{
     display: inline-block;
     position: relative;
@@ -127,8 +129,8 @@ a:hover{
 	position: absolute;
 	top: -3px;
 	left: 225px;
-	width: 8px;
-	height: 8px;
+	width: 7px;
+	height: 7px;
 	background-color: #fff;
 	border-radius: 100%;
 }
@@ -145,6 +147,12 @@ a:hover{
 }
 .list li{
 	margin: 11px 0;
+}
+.list li.active{
+	color: #700507;
+}
+.paris.active{
+	color: #fff;
 }
 .collapse{
 	display: block;
@@ -163,7 +171,7 @@ a:hover{
   .container{width: 520px;}
   .logo,
   .nav-bar{display: none;}
-  .text-content{top: 0; left: 50px;}
+  .text-content{top: 0; left: 750px;}
   .text-content__header{margin: 65px 0 90px;}
   .text-content__header h1{font-size: 80px; letter-spacing: -2px;}
   .collapse,
@@ -172,4 +180,6 @@ a:hover{
   .box-text h2{font-size: 29px;}
   .box-text p{font-size: 20px;}
   .list li{font-size: 26px;}
+  .map-content{width: 1920px; height: auto; transform: translateY(40px); overflow: hidden;}
+  .map-content img{width: 1920px;}
 }
