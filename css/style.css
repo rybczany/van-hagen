@@ -63,12 +63,7 @@ a:hover{
 
 /*----------------STYLE*/
 
-section{
-	background-image: url("../image/map.png");
-	background-size: 105% 100%;
-	background-position: center;
-	background-repeat: no-repeat;
-}
+
 .logo{
 	display: inline-block;
 	position: absolute;
@@ -92,24 +87,12 @@ section{
 .nav-bar li:nth-child(3){
 	padding-left: 95px;
 }
-.content{
-	margin: 220px 0 180px;
-}
-.list li{
-	margin: 15px 0;
-}
-.collapse{
-	display: block;
-}
-.box-text{
-	border: 1px solid #fff;
-	margin: 20px 0 90px;
-}
-.box-text h2{
-	margin: 50px 50px 40px;
-}
-.box-text p{
-	margin: 0 50px 55px;
+section.map{
+	background-image: url("../image/map.png");
+	background-size: 105% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	overflow: visible;
 }
 .location{
 	position: absolute;
@@ -141,6 +124,25 @@ section{
 	height: 8px;
 	background-color: #fff;
 	border-radius: 100%;
+}
+.content{
+	margin: 220px 0 180px;
+}
+.list li{
+	margin: 15px 0;
+}
+.collapse{
+	display: block;
+}
+.box-text{
+	border: 1px solid #fff;
+	margin: 20px 0 90px;
+}
+.box-text h2{
+	margin: 50px 50px 40px;
+}
+.box-text p{
+	margin: 0 50px 55px;
 }
 @media (max-width: 768px){
   .container{width: 520px;}
