@@ -88,6 +88,8 @@ a:hover{
 	padding-left: 95px;
 }
 section.map{
+	display: none;
+	background-color: transparent;
 	background-image: url("../image/map.png");
 	background-size: 105% 100%;
 	background-position: center;
