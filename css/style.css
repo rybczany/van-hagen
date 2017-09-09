@@ -105,9 +105,17 @@ a:hover{
 	position: absolute;
 	display: none;
 }
-.location--paris{
+#paris{
 	top: 300px;
 	left: 505px;
+}
+#moscow{
+	top: 231px;
+	left: 656px;
+}
+#bologna{
+	top: 312px;
+	left: 552px;
 }
 .location span{
 	display: block;
@@ -148,7 +156,7 @@ a:hover{
 .list li{
 	margin: 11px 0;
 }
-.list li.active{
+.list li span.active{
 	color: #700507;
 }
 .paris.active{
