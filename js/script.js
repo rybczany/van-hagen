@@ -16,34 +16,18 @@ $(document).ready(function(){
 
 	function pickUp(){
 
-		var allLocation = $('.location');
-		for (var i=0; i<allLocation.length; i++){
-			allLocation[i];
-		}
+		var pick = $(this).data('loc');
+		var pickLoc = $('.location');
+		var pickCity = pickLoc.filter(function() {
+			return $(this).attr('id') == pick;
+		});
 
-		var pickLoc = $(this).parents('body');
-		var pick = pickLoc.find(allLocation);
-
-		if(pick.toggle('slow')){
+		if(pickCity.toggle('slow')){
 			placeList.toggleClass('active') && textHeader.toggle();
 		}
-		console.log(pick);
+		
+
+		console.log(pickCity);
 
 	}
-
-
-
-
-	//for (var i = 0; i < placeList.length; i++){
-
-	//placeList.mouseenter(function(){
-		//if(location.toggle('slow')) {
-			//placeList.toggleClass('active') && textHeader.toggle() && listParis.toggleClass('active');
-		//}
-	//})
-	//}
-
-
-
-
 });
