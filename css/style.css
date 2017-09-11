@@ -15,6 +15,8 @@ body{
 	position: relative;
 	max-width: 1450px;
 	width: 100%;
+	height: 100vh;
+	min-height: 910px;
 	margin: 0 auto;
 }
 
@@ -71,8 +73,6 @@ a:hover{
 
 /*----------------STYLE*/
 .page{
-	height: 100vh;
-	min-height: 800px;
 	padding: 0 115px;
 }
 .nav-bar{
@@ -103,6 +103,9 @@ a,
 .nav-bar li:nth-child(3){
 	padding-left: 95px;
 }
+@media (max-width: 1400px){
+	.nav-bar li:nth-child(3){padding-left: 40px;}
+}
 @media (max-width: 1230px){
   .page{padding: 0 50px;}
   .logotype{margin-left: -30px}
@@ -110,23 +113,46 @@ a,
   .nav-bar li:nth-child(3){padding-left: 40px;}
   .logotype a{padding-left: 10px;}
 }
-@media (max-width: 1010px){
+.nav-adjust{
+	text-align: right;
+}
+.arrow{
+	position: relative;
+	cursor: pointer;
+}
+.arrow::before,
+.arrow::after{
+	content: '';
+	display: inline-block;
+	position: absolute;
+	left: -15px;
+	bottom: 3px;
+	width: 2px;
+	height: 7px;
+	background-color: #d5bbb9;
+	transform: rotate(-40deg);
+}
+.arrow::after{
+	left: -11px;
+	transform: rotate(40deg);
+}
+@media (max-width: 1015px){
   .page{padding: 0 20px;}
   .nav-bar li:first-child{padding-right: 5px;}
   .nav-bar li:nth-child(3){padding-left: 10px;}
   .logotype a{padding-left: 0;}
-}
-.nav-adjust{
-	text-align: right;
+  .arrow::before{left: -8px;}
+  .arrow::after{left: -4px;}
 }
 .map{
+	position: relative;
 	width: 100%;
-	overflow: hidden;
+
 }
 .map-content{
-	width: 101%;
+	width: 110%;
 	height: auto;
-	transform: translateY(8%);
+	transform: translate(-4%, 2%);
 }
 .location{
 	position: absolute;
@@ -179,6 +205,9 @@ a,
 	bottom: 0;
 	left: 0;
 }
+.list{
+	margin-top: 138px;
+}
 .list li{
 	margin: 11px 0;
 }
@@ -193,7 +222,7 @@ a,
 }
 .box-text{
 	border: 1px solid #fff;
-	margin: 10px 0 90px;
+	margin: 138px 0 90px;
 }
 .box-text h2{
 	margin: 50px 50px 30px;
@@ -202,10 +231,8 @@ a,
 	margin: 0 50px 55px;
 }
 @media (max-width: 768px){
-  .container{width: 520px;}
-  .logo,
+  .container{width: 520px; min-height: 1140px; overflow: hidden;}
   .nav-bar{display: none;}
-  .text-content{top: 0; left: 750px;}
   .text-content__header{margin: 65px 0 90px;}
   .text-content__header h1{font-size: 80px; letter-spacing: -2px;}
   .collapse,
@@ -213,7 +240,7 @@ a,
   .box-text{margin: 90px 0 100px;}
   .box-text h2{font-size: 29px;}
   .box-text p{font-size: 20px;}
+  .list{margin-top: 0}
   .list li{font-size: 26px;}
-  .map-content{width: 1920px; height: auto; transform: translateY(40px); overflow: hidden;}
-  .map-content img{width: 1920px;}
+  .map{width: 1920px; height: auto; transform: translate(-35%, 5%);}
 }
