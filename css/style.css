@@ -71,7 +71,11 @@ a:hover{
 
 
 /*----------------STYLE*/
-
+.page{
+	height: 100vh;
+	min-height: 500px;
+	position: relative;
+}
 
 .logo{
 	display: inline-block;
@@ -96,6 +100,10 @@ a:hover{
 .nav-bar li:nth-child(3){
 	padding-left: 95px;
 }
+.map{
+	width: 100%;
+	overflow: hidden;
+}
 .map-content{
 	width: 101%;
 	height: auto;
@@ -114,6 +122,10 @@ a:hover{
 	left: 656px;
 }
 #bologna{
+	top: 312px;
+	left: 552px;
+}
+#geneva{
 	top: 312px;
 	left: 552px;
 }
@@ -143,12 +155,13 @@ a:hover{
 	border-radius: 100%;
 }
 .text-content{
+	width: 100%;
 	position: absolute;
-	bottom: -200px;
-	left: 65px;
+	bottom: 0;
+	left: 0;
 }
 .text-content__header{
-	margin: 160px 0 130px;
+	margin-bottom: 
 }
 .list ul{
 	margin
