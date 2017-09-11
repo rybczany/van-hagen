@@ -12,7 +12,6 @@ body{
 	font-weight: 600;
 }
 .container{
-	position: relative;
 	max-width: 1450px;
 	width: 100%;
 	margin: 0 auto;
@@ -74,16 +73,21 @@ a:hover{
 
 /*----------------STYLE*/
 .page{
+	position: relative;
 	height: 100vh;
 	min-height: 500px;
+	margin: 0 115px;
 }
 .nav-bar{
 	margin-top: 40px;
 	letter-spacing: 2px;
 }
+.logotype{
+	margin-left: -75px;
+}
 .logotype a{
 	vertical-align: 15px;
-	padding-left: 45px;
+	padding-left: 20px;
 }
 .logo,
 a,
