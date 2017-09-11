@@ -71,22 +71,19 @@ a:hover{
 
 
 /*----------------STYLE*/
+
 .page{
 	height: 100vh;
 	min-height: 500px;
 	position: relative;
 }
-
-.logo{
-	display: inline-block;
-	position: absolute;
-	top: 47px;
-	left: 10px;
-}
 .nav-bar{
 	margin-top: 40px;
 	display: inline-block;
 	letter-spacing: 2px;
+}
+.logo{
+	display: inline-block;
 }
 .nav-bar ul{
 	margin-top: 20px;
@@ -94,12 +91,7 @@ a:hover{
 .nav-bar li{
 	display: inline-block;
 }
-.nav-bar li:first-child{
-	padding-right: 55px;
-}
-.nav-bar li:nth-child(3){
-	padding-left: 95px;
-}
+
 .map{
 	width: 100%;
 	overflow: hidden;
