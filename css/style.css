@@ -12,12 +12,14 @@ body{
 	font-weight: 600;
 }
 .container{
+	position: relative;
 	max-width: 1450px;
 	width: 100%;
 	margin: 0 auto;
 }
 .container--map{
 	max-width: 1540px;
+
 }
 /*-------------GLOBAL*/
 
@@ -71,15 +73,12 @@ a:hover{
 
 
 /*----------------STYLE*/
-
 .page{
 	height: 100vh;
 	min-height: 500px;
-	position: relative;
 }
 .nav-bar{
 	margin-top: 40px;
-	display: inline-block;
 	letter-spacing: 2px;
 }
 .logo{
@@ -91,7 +90,12 @@ a:hover{
 .nav-bar li{
 	display: inline-block;
 }
-
+.nav-bar li:first-child{
+	padding-right: 55px;
+}
+.nav-bar li:nth-child(3){
+	padding-left: 95px;
+}
 .map{
 	width: 100%;
 	overflow: hidden;
