@@ -1,30 +1,34 @@
 $(document).ready(function(){
 
 
-	var paris = $('#paris');
-	var moscow = $('#moscow');
-	var bologna = $('#bologna');
 	var listParis = $('.paris');
-	var listMoscow = $('.moscow');
-	var listBologna = $('.bologna');
-	var textHeader = $('.text-content__header');
-	var placeList = $('.list li span');
+	    listMoscow = $('.moscow');
+	    listBologna = $('.bologna');
+	    listGeneva = $('.geneva');
+	    textHeader = $('.text-content__header');
+	    placeList = $('.list li span');
 
 	listParis.on('mouseenter', pickUp);
 	listMoscow.on('mouseenter', pickUp);
 	listBologna.on('mouseenter', pickUp);
+	listGeneva.on('mouseenter', pickUp);
 
 	function pickUp(){
 
 		var pick = $(this).data('loc');
-		var pickLoc = $('.location');
-		var pickCity = pickLoc.filter(function() {
+		    pickLoc = $('.location');
+		    pickCity = pickLoc.filter(function() {
 			return $(this).attr('id') == pick;
+		});
+		    placeListClass = placeList.filter(function() {
+		    return $(this).attr('class') == pick
 		});
 
 		if(pickCity.toggle('slow')){
-			placeList.toggleClass('active') && textHeader.toggle();
-		}
+			placeList.toggleClass('active') && placeListClass.toggleClass('active');;
+		};
+		
+		textHeader.toggle();
 		
 
 		console.log(pickCity);

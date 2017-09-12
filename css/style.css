@@ -73,6 +73,7 @@ a:hover{
 
 /*----------------STYLE*/
 .page{
+	overflow: hidden;
 	padding: 0 115px;
 }
 .nav-bar{
@@ -159,20 +160,20 @@ a,
 	display: none;
 }
 #paris{
-	top: 300px;
-	left: 505px;
+	top: 21%;
+	left: 28.6%;
 }
 #moscow{
-	top: 231px;
-	left: 656px;
+	top: 15.1%;
+	left: 39.4%;
 }
 #bologna{
-	top: 312px;
-	left: 552px;
+	top: 21.1%;
+	left: 32%;
 }
 #geneva{
-	top: 312px;
-	left: 552px;
+	top: 21%;
+	left: 29.4%;
 }
 .location span{
 	display: block;
@@ -214,9 +215,6 @@ a,
 .list li span.active{
 	color: #700507;
 }
-.paris.active{
-	color: #fff;
-}
 .collapse{
 	display: block;
 }
@@ -231,12 +229,11 @@ a,
 	margin: 0 50px 55px;
 }
 @media (max-width: 768px){
-  .container{width: 520px; min-height: 1140px; overflow: hidden;}
+  .container{width: 520px; min-height: 1140px;}
   .nav-bar{display: none;}
   .text-content__header{margin: 65px 0 90px;}
   .text-content__header h1{font-size: 80px; letter-spacing: -2px;}
-  .collapse,
-  .location{display: none;}
+  .collapse{display: none;}
   .box-text{margin: 90px 0 100px;}
   .box-text h2{font-size: 29px;}
   .box-text p{font-size: 20px;}
